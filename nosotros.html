@@ -4,131 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros | Eixo Atlántico</title>
     <meta name="description"
-        content="Conoce al equipo de Eixo Atl�ntico. Especialistas en automatización empresarial para pequeños comercios en Ferrol.">
-    <title>Sobre Nosotros | Eixo Atl�ntico</title>
+        content="Eixo Atlántico - Expertos en automatización empresarial. Ayudamos a pequeños y medianos comercios a optimizar sus procesos y crecer.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
             <a href="index.html" class="logo">
                 <span class="logo-icon">⚡</span>
-                <span class="logo-text">Automatiza<span class="highlight">Ferrol</span></span>
+                <span class="logo-text">Eixo <span>Atlántico</span></span>
             </a>
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="casos-exito.html">Casos de Éxito</a></li>
                 <li><a href="precios.html">Precios</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="casos-exito.html">Casos de Éxito</a></li>
+                <li><a href="nosotros.html" class="active">Nosotros</a></li>
+                <li><a href="contacto.html" class="btn btn-primary">Contactar</a></li>
             </ul>
-            <a href="contacto.html" class="btn btn-primary nav-cta">Solicitar Demo</a>
-            <button class="mobile-menu-btn" aria-label="Menú"><span></span><span></span><span></span></button>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <header class="page-header">
-        <div class="container">
-            <div class="breadcrumb">
-                <a href="index.html">Inicio</a>
-                <span>/</span>
-                <span>Sobre Nosotros</span>
-            </div>
-            <h1>Sobre Nosotros</h1>
-            <p>Conoce la historia, misión y el equipo detrás de Eixo Atl�ntico.</p>
-        </div>
+        </nav>
     </header>
 
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-tag">Sobre Nosotros</span>
+            <h1>Automatización para el <span class="gradient-text">éxito de tu negocio</span></h1>
+            <p class="hero-subtitle">Somos especialistas en transformar procesos manuales en flujos automatizados que
+                ahorran tiempo y dinero.</p>
+        </div>
+    </section>
+
     <!-- Mission Section -->
-    <section>
+    <section class="about-section">
         <div class="container">
-            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-                <span class="section-tag">Nuestra misión</span>
-                <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Democratizar la automatización para pequeños
-                    comercios</h2>
-                <p style="font-size: 1.125rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.5rem;">
-                    Creemos que las herramientas de automatización no deberían ser exclusivas de grandes empresas con
-                    presupuestos millonarios. Los pequeños comercios de Ferrol merecen las mismas ventajas competitivas.
-                </p>
-                <p style="font-size: 1.125rem; color: var(--text-secondary); line-height: 1.8;">
-                    Nuestra misión es <strong style="color: var(--text-primary);">hacer accesible la tecnología de
-                        automatización</strong> a negocios locales, con soluciones adaptadas a sus necesidades reales, a
-                    precios que puedan pagar, y con un soporte cercano y en su idioma.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Story Section -->
-    <section style="background: var(--bg-card);">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center;">
-                <div>
-                    <span class="section-tag">Nuestra historia</span>
-                    <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Nacidos en Ferrol, para Ferrol</h2>
-                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
-                        Eixo Atl�ntico nació de una frustración: ver cómo pequeños comercios de nuestra ciudad perdían
-                        horas cada día en tareas que podían automatizarse fácilmente.
-                    </p>
-                    <p style="color: var(--text-secondary); line-height: 1.8; margin-bottom: 1rem;">
-                        Como estudiante de Ingeniería Empresarial en la Universidad de A Coruña, vi la brecha entre la
-                        tecnología disponible y lo que realmente llegaba a los negocios locales. Las grandes consultoras
-                        no les interesaban por ser "demasiado pequeños". Las soluciones online eran impersonales y
-                        complicadas.
-                    </p>
-                    <p style="color: var(--text-secondary); line-height: 1.8;">
-                        Decidí crear algo diferente: <strong style="color: var(--text-primary);">automatizaciones
-                            profesionales con atención local</strong>. Conocemos Ferrol, entendemos sus comercios, y
-                        estamos aquí para ayudarles a crecer.
-                    </p>
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2>Nuestra Misión</h2>
+                    <p>Creemos que las pequeñas y medianas empresas merecen acceso a tecnología de automatización de
+                        primer nivel, sin necesidad de grandes inversiones ni equipos técnicos internos.</p>
+                    <p>Nuestro objetivo es simple: <strong>liberarte del trabajo repetitivo</strong> para que puedas
+                        centrarte en hacer crecer tu negocio y atender a tus clientes.</p>
                 </div>
-                <div
-                    style="background: linear-gradient(135deg, var(--primary-dark), var(--accent)); border-radius: 1.5rem; height: 400px; display: flex; align-items: center; justify-content: center;">
-                    <span style="font-size: 6rem;">🚀</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">El equipo</span>
-                <h2>Quién está detrás</h2>
-            </div>
-            <div class="team-card">
-                <div class="team-avatar">👨‍💻</div>
-                <div class="team-info">
-                    <h3>Fundador & Lead Developer</h3>
-                    <p class="role">Ingeniería Empresarial | Universidad de A Coruña</p>
-                    <p>
-                        Estudiante de 3er año de Ingeniería Empresarial con especialización en automatización de
-                        procesos y análisis de datos. Combino conocimientos técnicos de programación (Python, SQL, APIs)
-                        con visión de negocio para crear soluciones que realmente funcionen.
-                    </p>
-                    <p>
-                        Mi objetivo es demostrar que la automatización no tiene por qué ser complicada ni cara. Cada
-                        proyecto que hago es una oportunidad de aprender y de ayudar a un negocio local a crecer.
-                    </p>
-                    <div class="team-skills">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">n8n</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">APIs</span>
-                        <span class="skill-tag">Six Sigma</span>
-                        <span class="skill-tag">ISO 9001</span>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">+50</span>
+                        <span class="stat-label">Proyectos completados</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">15h</span>
+                        <span class="stat-label">Ahorro semanal medio</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Clientes satisfechos</span>
                     </div>
                 </div>
             </div>
@@ -136,53 +71,77 @@
     </section>
 
     <!-- Values Section -->
-    <section style="background: linear-gradient(135deg, var(--primary-dark), hsl(240, 50%, 20%));">
+    <section class="values-section">
         <div class="container">
-            <div class="section-header" style="color: white;">
-                <span class="section-tag">Nuestros valores</span>
-                <h2>Cómo trabajamos</h2>
-            </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
-                <div
-                    style="padding: 2rem; background: hsla(0, 0%, 100%, 0.05); border: 1px solid hsla(0, 0%, 100%, 0.1); border-radius: 1rem;">
-                    <div style="font-size: 2rem; margin-bottom: 1rem;">🎯</div>
-                    <h4 style="margin-bottom: 0.5rem;">Resultados primero</h4>
-                    <p style="color: hsla(0, 0%, 100%, 0.7); font-size: 0.875rem;">No vendemos tecnología por vender.
-                        Solo implementamos soluciones que tengan un ROI demostrable para tu negocio.</p>
+            <h2 class="section-title">Nuestros Valores</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <span class="value-icon">🎯</span>
+                    <h3>Resultados Medibles</h3>
+                    <p>Cada automatización que implementamos tiene objetivos claros y métricas de éxito definidas.</p>
                 </div>
-                <div
-                    style="padding: 2rem; background: hsla(0, 0%, 100%, 0.05); border: 1px solid hsla(0, 0%, 100%, 0.1); border-radius: 1rem;">
-                    <div style="font-size: 2rem; margin-bottom: 1rem;">🤝</div>
-                    <h4 style="margin-bottom: 0.5rem;">Cercanía local</h4>
-                    <p style="color: hsla(0, 0%, 100%, 0.7); font-size: 0.875rem;">Somos de aquí. Podemos tomarnos un
-                        café contigo para hablar de tu negocio. Eso no lo ofrece una empresa de Madrid.</p>
+                <div class="value-card">
+                    <span class="value-icon">🤝</span>
+                    <h3>Colaboración</h3>
+                    <p>Trabajamos codo a codo contigo para entender tu negocio y crear soluciones a medida.</p>
                 </div>
-                <div
-                    style="padding: 2rem; background: hsla(0, 0%, 100%, 0.05); border: 1px solid hsla(0, 0%, 100%, 0.1); border-radius: 1rem;">
-                    <div style="font-size: 2rem; margin-bottom: 1rem;">💡</div>
-                    <h4 style="margin-bottom: 0.5rem;">Simplicidad</h4>
-                    <p style="color: hsla(0, 0%, 100%, 0.7); font-size: 0.875rem;">La mejor tecnología es la que no
-                        notas que está ahí. Creamos sistemas que funcionan solos, sin complicaciones.</p>
+                <div class="value-card">
+                    <span class="value-icon">🚀</span>
+                    <h3>Innovación Práctica</h3>
+                    <p>Aplicamos las últimas tecnologías de forma pragmática, siempre enfocados en el ROI.</p>
                 </div>
-                <div
-                    style="padding: 2rem; background: hsla(0, 0%, 100%, 0.05); border: 1px solid hsla(0, 0%, 100%, 0.1); border-radius: 1rem;">
-                    <div style="font-size: 2rem; margin-bottom: 1rem;">📈</div>
-                    <h4 style="margin-bottom: 0.5rem;">Crecimiento mutuo</h4>
-                    <p style="color: hsla(0, 0%, 100%, 0.7); font-size: 0.875rem;">Tu éxito es nuestro éxito. Crecemos
-                        juntos. Por eso nuestros precios son accesibles y nuestro soporte es real.</p>
+                <div class="value-card">
+                    <span class="value-icon">🛡️</span>
+                    <h3>Fiabilidad</h3>
+                    <p>Sistemas robustos con soporte continuo para que nunca te quedes sin respaldo.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Banner -->
-    <section>
+    <!-- Services Overview -->
+    <section class="services-overview">
         <div class="container">
-            <div class="cta-banner">
-                <h3>¿Quieres conocernos mejor?</h3>
-                <p>Agenda una llamada sin compromiso y hablemos de tu negocio.</p>
-                <a href="contacto.html" class="btn btn-primary btn-lg">Contactar →</a>
+            <h2 class="section-title">¿Qué ofrecemos?</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <span class="service-icon">📅</span>
+                    <div>
+                        <h3>Gestión de Citas</h3>
+                        <p>Reservas online 24/7 con recordatorios automáticos por SMS y WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <span class="service-icon">🧾</span>
+                    <div>
+                        <h3>Facturación Automática</h3>
+                        <p>Genera facturas desde tu TPV o sistema de ventas sin intervención manual.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <span class="service-icon">📦</span>
+                    <div>
+                        <h3>Control de Inventario</h3>
+                        <p>Alertas de stock bajo y sincronización con proveedores.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <span class="service-icon">📊</span>
+                    <div>
+                        <h3>Informes y Dashboards</h3>
+                        <p>Visualiza el rendimiento de tu negocio con datos en tiempo real.</p>
+                    </div>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿Listo para automatizar tu negocio?</h2>
+            <p>Agenda una consulta gratuita y descubre cómo podemos ayudarte.</p>
+            <a href="contacto.html" class="btn btn-primary btn-lg">Solicitar Consulta Gratuita</a>
         </div>
     </section>
 
@@ -193,50 +152,38 @@
                 <div class="footer-brand">
                     <a href="index.html" class="logo">
                         <span class="logo-icon">⚡</span>
-                        <span class="logo-text">Automatiza<span class="highlight">Ferrol</span></span>
+                        <span class="logo-text">Eixo <span>Atlántico</span></span>
                     </a>
-                    <p>Automatizaciones empresariales para pequeños comercios en Ferrol y comarca.</p>
+                    <p>Automatización empresarial para PYMEs.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Servicios</h4>
                     <ul>
-                        <li><a href="servicios.html#facturacion">Facturación automática</a></li>
-                        <li><a href="servicios.html#citas">Gestión de citas</a></li>
-                        <li><a href="servicios.html#inventario">Control de inventario</a></li>
-                        <li><a href="servicios.html#informes">Informes automáticos</a></li>
+                        <li><a href="servicios.html">Gestión de Citas</a></li>
+                        <li><a href="servicios.html">Facturación</a></li>
+                        <li><a href="servicios.html">Inventario</a></li>
+                        <li><a href="servicios.html">Informes</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Empresa</h4>
                     <ul>
-                        <li><a href="casos-exito.html">Casos de éxito</a></li>
+                        <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="casos-exito.html">Casos de Éxito</a></li>
                         <li><a href="precios.html">Precios</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="nosotros.html">Sobre nosotros</a></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h4>Contacto</h4>
-                    <ul>
-                        <li>📍 Ferrol, A Coruña, Galicia</li>
-                        <li>📧 <a href="mailto:hola@Eixo Atl�ntico.es">hola@Eixo Atl�ntico.es</a></li>
-                        <li>📞 <a href="tel:+34600000000">+34 XXX XXX XXX</a></li>
-                    </ul>
+                    <p>📧 eixo.atlantico.oficial@gmail.com</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 Eixo Atl�ntico. Todos los derechos reservados.</p>
-                <div class="footer-legal">
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Aviso legal</a>
-                    <a href="#">Cookies</a>
-                </div>
+                <p>&copy; 2025 Eixo Atlántico. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 
 </html>
-
