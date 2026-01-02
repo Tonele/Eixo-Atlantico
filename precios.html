@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Precios de Eixo Atl�ntico. Planes de automatización para pequeños comercios desde 99€/mes.">
+    <title>Precios | Eixo Atl�ntico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .pricing-card {
+            position: relative;
+            padding: 2.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 1.5rem;
+            transition: all 0.25s ease;
+        }
+
+        .pricing-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .pricing-card.featured {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-glow);
+            transform: scale(1.02);
+        }
+
+        .pricing-card.featured:hover {
+            transform: scale(1.02) translateY(-4px);
+        }
+
+        .pricing-badge {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0.5rem 1.5rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: white;
+            font-size: 0.875rem;
+            font-weight: 700;
+            border-radius: 9999px;
+        }
+
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .pricing-tier {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .pricing-price {
+            margin: 1rem 0;
+        }
+
+        .price-currency {
+            font-size: 1.25rem;
+            font-weight: 600;
+            vertical-align: top;
+        }
+
+        .price-amount {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1;
+        }
+
+        .price-period {
+            font-size: 1rem;
+            color: var(--text-muted);
+        }
+
+        .pricing-setup {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .pricing-description {
+            text-align: center;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-features {
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-features li {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 0;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .pricing-features li.disabled {
+            color: var(--text-muted);
+        }
+
+        .pricing-features .check {
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .pricing-features .cross {
+            color: var(--text-muted);
+        }
+
+        .pricing-ideal {
+            padding: 1rem;
+            background: var(--bg-elevated);
+            border-radius: 0.5rem;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .pricing-ideal span {
+            display: block;
+            font-size: 0.75rem;
+            margin-bottom: 0.25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Automatiza<span class="highlight">Ferrol</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="casos-exito.html">Casos de Éxito</a></li>
+                <li><a href="precios.html" class="active">Precios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <a href="contacto.html" class="btn btn-primary nav-cta">Solicitar Demo</a>
+            <button class="mobile-menu-btn" aria-label="Menú"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Inicio</a>
+                <span>/</span>
+                <span>Precios</span>
+            </div>
+            <h1>Planes y Precios</h1>
+            <p>Inversión clara, sin sorpresas. Elige el plan que mejor se adapte a tu negocio.</p>
+        </div>
+    </header>
+
+    <!-- Pricing Section -->
+    <section>
+        <div class="container">
+            <div class="pricing-grid">
+                <!-- Basic -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="pricing-tier">🥉 Básico</span>
+                        <div class="pricing-price">
+                            <span class="price-currency">€</span>
+                            <span class="price-amount">99</span>
+                            <span class="price-period">/mes</span>
+                        </div>
+                        <span class="pricing-setup">+ 199€ setup inicial (único pago)</span>
+                    </div>
+                    <p class="pricing-description">Perfecto para autónomos y negocios pequeños que quieren empezar a
+                        automatizar.</p>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> 1 automatización a elegir</li>
+                        <li><span class="check">✓</span> Soporte por email (respuesta 48h)</li>
+                        <li><span class="check">✓</span> Video tutoriales de formación</li>
+                        <li><span class="check">✓</span> Panel de control básico</li>
+                        <li><span class="check">✓</span> Actualizaciones incluidas</li>
+                        <li class="disabled"><span class="cross">✗</span> Soporte telefónico</li>
+                        <li class="disabled"><span class="cross">✗</span> Revisiones mensuales</li>
+                        <li class="disabled"><span class="cross">✗</span> Desarrollos a medida</li>
+                    </ul>
+                    <div class="pricing-ideal">
+                        <span>Ideal para:</span>
+                        Autónomos y negocios de 1-2 empleados
+                    </div>
+                    <a href="contacto.html" class="btn btn-outline btn-block">Empezar ahora</a>
+                </div>
+
+                <!-- Professional -->
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Más popular</div>
+                    <div class="pricing-header">
+                        <span class="pricing-tier">🥈 Profesional</span>
+                        <div class="pricing-price">
+                            <span class="price-currency">€</span>
+                            <span class="price-amount">299</span>
+                            <span class="price-period">/mes</span>
+                        </div>
+                        <span class="pricing-setup">+ 399€ setup inicial (único pago)</span>
+                    </div>
+                    <p class="pricing-description">El plan más popular. Automatización completa para comercios
+                        establecidos.</p>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> 3 automatizaciones incluidas</li>
+                        <li><span class="check">✓</span> Soporte email + teléfono (24h)</li>
+                        <li><span class="check">✓</span> 2 horas formación presencial</li>
+                        <li><span class="check">✓</span> Panel de control avanzado</li>
+                        <li><span class="check">✓</span> 1 revisión mensual incluida</li>
+                        <li><span class="check">✓</span> Desarrollos básicos a medida</li>
+                        <li><span class="check">✓</span> Integraciones con 3as apps</li>
+                        <li><span class="check">✓</span> Prioridad en soporte</li>
+                    </ul>
+                    <div class="pricing-ideal">
+                        <span>Ideal para:</span>
+                        Comercios de 3-5 empleados
+                    </div>
+                    <a href="contacto.html" class="btn btn-primary btn-block">Solicitar Demo</a>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <span class="pricing-tier">🥇 Empresarial</span>
+                        <div class="pricing-price">
+                            <span class="price-currency">€</span>
+                            <span class="price-amount">599</span>
+                            <span class="price-period">/mes</span>
+                        </div>
+                        <span class="pricing-setup">+ 799€ setup inicial (único pago)</span>
+                    </div>
+                    <p class="pricing-description">Solución completa para negocios con necesidades avanzadas de
+                        automatización.</p>
+                    <ul class="pricing-features">
+                        <li><span class="check">✓</span> 5+ automatizaciones (ilimitadas)</li>
+                        <li><span class="check">✓</span> Soporte prioritario (4h respuesta)</li>
+                        <li><span class="check">✓</span> 5 horas formación presencial</li>
+                        <li><span class="check">✓</span> Panel de control premium</li>
+                        <li><span class="check">✓</span> 2 revisiones mensuales</li>
+                        <li><span class="check">✓</span> Desarrollos ilimitados a medida</li>
+                        <li><span class="check">✓</span> Account manager dedicado</li>
+                        <li><span class="check">✓</span> SLA garantizado 99.9%</li>
+                    </ul>
+                    <div class="pricing-ideal">
+                        <span>Ideal para:</span>
+                        Comercios de 6-10+ empleados
+                    </div>
+                    <a href="contacto.html" class="btn btn-outline btn-block">Contactar</a>
+                </div>
+            </div>
+
+            <!-- Guarantee -->
+            <div
+                style="display: flex; align-items: center; gap: 1.5rem; max-width: 600px; margin: 0 auto; padding: 2rem; background: var(--bg-elevated); border: 1px solid var(--border-subtle); border-radius: 1rem;">
+                <div style="font-size: 3rem;">🛡️</div>
+                <div>
+                    <h4 style="font-size: 1.125rem; margin-bottom: 0.25rem;">Garantía de satisfacción 30 días</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem;">Si en los primeros 30 días no ves
+                        resultados, te devolvemos el 100% del setup. Sin preguntas, sin letra pequeña.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section style="background: var(--bg-card);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Comparativa</span>
+                <h2>Compara los planes en detalle</h2>
+            </div>
+            <div class="comparison-table" style="overflow-x: auto;">
+                <table
+                    style="width: 100%; min-width: 700px; border-collapse: collapse; background: var(--bg-elevated); border-radius: 1rem; overflow: hidden;">
+                    <thead>
+                        <tr style="background: var(--bg-dark);">
+                            <th style="padding: 1rem 1.5rem; text-align: left; font-weight: 700;">Característica</th>
+                            <th style="padding: 1rem 1.5rem; text-align: center;">🥉 Básico</th>
+                            <th style="padding: 1rem 1.5rem; text-align: center; background: hsla(220, 90%, 56%, 0.1);">
+                                🥈 Profesional</th>
+                            <th style="padding: 1rem 1.5rem; text-align: center;">🥇 Empresarial</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding: 1rem 1.5rem; border-bottom: 1px solid var(--border-subtle);">
+                                Automatizaciones incluidas</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+                                1</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle); background: hsla(220, 90%, 56%, 0.05);">
+                                3</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+                                5+</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem 1.5rem; border-bottom: 1px solid var(--border-subtle);">Setup
+                                inicial</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+                                199€</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle); background: hsla(220, 90%, 56%, 0.05);">
+                                399€</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+                                799€</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem 1.5rem; border-bottom: 1px solid var(--border-subtle);">Tiempo de
+                                respuesta soporte</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+                                48h</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle); background: hsla(220, 90%, 56%, 0.05);">
+                                24h</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+                                4h</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem 1.5rem; border-bottom: 1px solid var(--border-subtle);">Soporte
+                                telefónico</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle); color: var(--text-muted);">
+                                ✗</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle); background: hsla(220, 90%, 56%, 0.05); color: var(--success);">
+                                ✓</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle); color: var(--success);">
+                                ✓</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem 1.5rem; border-bottom: 1px solid var(--border-subtle);">Formación
+                            </td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+                                Videos</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle); background: hsla(220, 90%, 56%, 0.05);">
+                                2h presencial</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+                                5h presencial</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem 1.5rem; border-bottom: 1px solid var(--border-subtle);">Revisiones
+                                mensuales</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle); color: var(--text-muted);">
+                                ✗</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle); background: hsla(220, 90%, 56%, 0.05);">
+                                1/mes</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+                                2/mes</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem 1.5rem; border-bottom: 1px solid var(--border-subtle);">Desarrollos
+                                a medida</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle); color: var(--text-muted);">
+                                ✗</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle); background: hsla(220, 90%, 56%, 0.05);">
+                                Básicos</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; border-bottom: 1px solid var(--border-subtle);">
+                                Ilimitados</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem 1.5rem;">SLA garantizado</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center; color: var(--text-muted);">✗</td>
+                            <td
+                                style="padding: 1rem 1.5rem; text-align: center; background: hsla(220, 90%, 56%, 0.05);">
+                                99%</td>
+                            <td style="padding: 1rem 1.5rem; text-align: center;">99.9%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Preguntas frecuentes</span>
+                <h2>Resolvemos tus dudas</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item open">
+                    <div class="faq-question">
+                        <span>¿Hay permanencia o compromiso de permanencia?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        No, no hay permanencia. Puedes cancelar en cualquier momento con un preaviso de 30 días. Si
+                        cancelas, las automatizaciones dejarán de funcionar al final del período facturado, pero tus
+                        datos siempre serán tuyos.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Qué pasa si necesito más automatizaciones de las incluidas?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Puedes añadir automatizaciones adicionales por 49€/mes cada una, o subir de plan para obtener
+                        más incluidas. Siempre te asesoraremos sobre la opción más económica para tu caso.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿El setup se paga solo una vez?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sí, el setup es un pago único que cubre la configuración inicial, integración con tus sistemas
+                        actuales, migración de datos si es necesaria, y formación inicial. No vuelve a cobrarse nunca.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Puedo empezar con el plan Básico y subir después?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Por supuesto. Puedes cambiar de plan en cualquier momento. Si subes de plan, solo pagas la
+                        diferencia del setup (200€ de Básico a Profesional, 400€ a Empresarial). La mensualidad se
+                        ajusta al nuevo plan en el siguiente ciclo.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Hay descuento por pago anual?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Sí, si pagas la anualidad por adelantado te aplicamos un descuento del 15%. Esto equivale a casi
+                        2 meses gratis. Y además, el setup se reduce un 20%.
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>¿Qué incluye exactamente el soporte?</span>
+                        <span class="icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        El soporte incluye: resolución de incidencias técnicas, ayuda con el uso del sistema, ajustes
+                        menores de configuración, y asesoramiento sobre optimización. No incluye desarrollo de nuevas
+                        automatizaciones (eso sería un proyecto adicional o parte de las revisiones mensuales en planes
+                        superiores).
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section>
+        <div class="container">
+            <div class="cta-banner">
+                <h3>¿Tienes dudas sobre qué plan elegir?</h3>
+                <p>Agenda una llamada gratuita de 15 minutos y te asesoramos sin compromiso.</p>
+                <a href="contacto.html" class="btn btn-primary btn-lg">Agendar Llamada Gratuita →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">Automatiza<span class="highlight">Ferrol</span></span>
+                    </a>
+                    <p>Automatizaciones empresariales para pequeños comercios en Ferrol y comarca.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicios.html#facturacion">Facturación automática</a></li>
+                        <li><a href="servicios.html#citas">Gestión de citas</a></li>
+                        <li><a href="servicios.html#inventario">Control de inventario</a></li>
+                        <li><a href="servicios.html#informes">Informes automáticos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="casos-exito.html">Casos de éxito</a></li>
+                        <li><a href="precios.html">Precios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📍 Ferrol, A Coruña, Galicia</li>
+                        <li>📧 <a href="mailto:hola@Eixo Atl�ntico.es">hola@Eixo Atl�ntico.es</a></li>
+                        <li>📞 <a href="tel:+34600000000">+34 600 000 000</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eixo Atl�ntico. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Aviso legal</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const item = question.parentElement;
+                item.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contacta con Eixo Atl�ntico. Solicita una demo gratuita de automatización empresarial para tu comercio.">
+    <title>Contacto | Eixo Atl�ntico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Automatiza<span class="highlight">Ferrol</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="casos-exito.html">Casos de Éxito</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+            <a href="contacto.html" class="btn btn-primary nav-cta">Solicitar Demo</a>
+            <button class="mobile-menu-btn" aria-label="Menú"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Inicio</a>
+                <span>/</span>
+                <span>Contacto</span>
+            </div>
+            <h1>Contacta con nosotros</h1>
+            <p>¿Tienes preguntas? ¿Quieres una demo? Estamos aquí para ayudarte.</p>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section>
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3>Hablemos de tu negocio</h3>
+                    <p>Ofrecemos una consulta inicial gratuita de 30 minutos para entender tus necesidades y explicarte
+                        cómo podemos ayudarte. Sin compromiso, sin presión.</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="icon">📍</div>
+                            <div class="details">
+                                <strong>Ubicación</strong>
+                                <span>Ferrol, A Coruña, Galicia</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="icon">📧</div>
+                            <div class="details">
+                                <strong>Email</strong>
+                                <span><a href="mailto:hola@Eixo Atl�ntico.es">hola@Eixo Atl�ntico.es</a></span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="icon">📞</div>
+                            <div class="details">
+                                <strong>Teléfono</strong>
+                                <span><a href="tel:+34600000000">+34 600 000 000</a></span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="icon">💬</div>
+                            <div class="details">
+                                <strong>WhatsApp</strong>
+                                <span><a href="https://wa.me/34600000000">Enviar mensaje</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        style="padding: 1.5rem; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: 1rem;">
+                        <h4 style="margin-bottom: 0.5rem;">⏰ Horario de atención</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 0.5rem;">Lunes a
+                            Viernes: 9:00 - 19:00</p>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">Sábados: 10:00 - 14:00 (solo citas
+                            previas)</p>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h3>Solicitar Demo Gratuita</h3>
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Nombre *</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellidos">Apellidos</label>
+                                <input type="text" id="apellidos" name="apellidos">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="negocio">Nombre del negocio *</label>
+                            <input type="text" id="negocio" name="negocio" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo-negocio">Tipo de negocio</label>
+                            <select id="tipo-negocio" name="tipo-negocio">
+                                <option value="">Selecciona una opción</option>
+                                <option value="tienda">Tienda / Comercio minorista</option>
+                                <option value="peluqueria">Peluquería / Estética</option>
+                                <option value="hosteleria">Cafetería / Restaurante</option>
+                                <option value="farmacia">Farmacia</option>
+                                <option value="oficina">Oficina / Asesoría</option>
+                                <option value="ecommerce">Tienda online</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="interes">¿Qué te interesa automatizar?</label>
+                            <select id="interes" name="interes">
+                                <option value="">Selecciona una opción</option>
+                                <option value="facturacion">Facturación automática</option>
+                                <option value="citas">Gestión de citas y reservas</option>
+                                <option value="inventario">Control de inventario</option>
+                                <option value="marketing">Marketing automation</option>
+                                <option value="crm">CRM / Gestión de clientes</option>
+                                <option value="informes">Informes automáticos</option>
+                                <option value="chatbot">Chatbot / Atención cliente</option>
+                                <option value="varios">Varias cosas</option>
+                                <option value="no-se">No estoy seguro/a</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Cuéntanos sobre tu negocio y qué problema quieres resolver</label>
+                            <textarea id="mensaje" name="mensaje" rows="4"
+                                placeholder="Por ejemplo: Tengo una tienda de ropa y pierdo mucho tiempo con el inventario..."></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label style="display: flex; align-items: flex-start; gap: 0.5rem; cursor: pointer;">
+                                <input type="checkbox" name="privacidad" required style="margin-top: 0.25rem;">
+                                <span style="font-size: 0.875rem; color: var(--text-secondary);">He leído y acepto la <a
+                                        href="#" style="color: var(--primary);">política de privacidad</a></span>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <span>Solicitar Demo Gratuita</span>
+                            <span>→</span>
+                        </button>
+                    </form>
+                    <p style="text-align: center; margin-top: 1rem; font-size: 0.875rem; color: var(--text-muted);">
+                        Te responderemos en menos de 24 horas laborables.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section (placeholder) -->
+    <section style="background: var(--bg-card); padding: 0;">
+        <div
+            style="height: 300px; background: linear-gradient(135deg, var(--bg-elevated), var(--bg-dark)); display: flex; align-items: center; justify-content: center;">
+            <div style="text-align: center;">
+                <span style="font-size: 3rem; display: block; margin-bottom: 1rem;">📍</span>
+                <p style="color: var(--text-secondary);">Ferrol, A Coruña, Galicia</p>
+                <p style="color: var(--text-muted); font-size: 0.875rem;">Visitas con cita previa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Quick -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <h2>Preguntas rápidas</h2>
+            </div>
+            <div
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 900px; margin: 0 auto;">
+                <div style="padding: 1.5rem; background: var(--bg-card); border-radius: 1rem;">
+                    <h4 style="margin-bottom: 0.5rem;">¿La demo es realmente gratis?</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem;">Sí, 100% gratis y sin compromiso. Es
+                        una llamada de 30 minutos donde analizamos tu caso.</p>
+                </div>
+                <div style="padding: 1.5rem; background: var(--bg-card); border-radius: 1rem;">
+                    <h4 style="margin-bottom: 0.5rem;">¿Cuánto tiempo tarda la implementación?</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem;">Depende del servicio, pero la mayoría
+                        están operativos en 3-7 días laborables.</p>
+                </div>
+                <div style="padding: 1.5rem; background: var(--bg-card); border-radius: 1rem;">
+                    <h4 style="margin-bottom: 0.5rem;">¿Necesito conocimientos técnicos?</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem;">No. Nos encargamos de todo y te
+                        formamos para que puedas usarlo sin problemas.</p>
+                </div>
+                <div style="padding: 1.5rem; background: var(--bg-card); border-radius: 1rem;">
+                    <h4 style="margin-bottom: 0.5rem;">¿Solo trabajáis en Ferrol?</h4>
+                    <p style="color: var(--text-secondary); font-size: 0.875rem;">Principalmente, pero atendemos toda la
+                        comarca y podemos trabajar en remoto con cualquier lugar de Galicia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">Automatiza<span class="highlight">Ferrol</span></span>
+                    </a>
+                    <p>Automatizaciones empresariales para pequeños comercios en Ferrol y comarca.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicios.html#facturacion">Facturación automática</a></li>
+                        <li><a href="servicios.html#citas">Gestión de citas</a></li>
+                        <li><a href="servicios.html#inventario">Control de inventario</a></li>
+                        <li><a href="servicios.html#informes">Informes automáticos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="casos-exito.html">Casos de éxito</a></li>
+                        <li><a href="precios.html">Precios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📍 Ferrol, A Coruña, Galicia</li>
+                        <li>📧 <a href="mailto:hola@Eixo Atl�ntico.es">hola@Eixo Atl�ntico.es</a></li>
+                        <li>📞 <a href="tel:+34600000000">+34 600 000 000</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eixo Atl�ntico. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Aviso legal</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('¡Gracias por tu interés! Te contactaremos en menos de 24 horas.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

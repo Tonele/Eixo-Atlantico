@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Eixo Atl�ntico - Automatizaciones empresariales para pequeños comercios en Ferrol. Ahorra tiempo, reduce errores y haz crecer tu negocio.">
+    <meta name="keywords"
+        content="automatización, Ferrol, pequeños comercios, PYMES, Galicia, facturación, inventario, CRM">
+    <title>Eixo Atl�ntico | Tu negocio en automático</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Hero specific styles for home */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: calc(80px + 4rem) 1.5rem 4rem;
+            overflow: hidden;
+        }
+
+        .hero-bg-effects {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .gradient-orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+            opacity: 0.5;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .orb-1 {
+            width: 600px;
+            height: 600px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            top: -200px;
+            right: -100px;
+        }
+
+        .orb-2 {
+            width: 400px;
+            height: 400px;
+            background: linear-gradient(135deg, var(--accent), var(--primary));
+            bottom: -100px;
+            left: -100px;
+            animation-delay: -10s;
+        }
+
+        .grid-overlay {
+            position: absolute;
+            inset: 0;
+            background-image:
+                linear-gradient(to right, var(--border-subtle) 1px, transparent 1px),
+                linear-gradient(to bottom, var(--border-subtle) 1px, transparent 1px);
+            background-size: 60px 60px;
+            mask-image: radial-gradient(ellipse at center, black 0%, transparent 70%);
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            25% {
+                transform: translate(30px, -30px) rotate(5deg);
+            }
+
+            50% {
+                transform: translate(-20px, 20px) rotate(-5deg);
+            }
+
+            75% {
+                transform: translate(-30px, -20px) rotate(3deg);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+
+        .badge-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--success);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(1.2);
+            }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary-light), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            line-height: 1.7;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+
+        .hero-stats {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-light);
+        }
+
+        .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .stat-divider {
+            width: 1px;
+            height: 40px;
+            background: var(--border-subtle);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .stat-divider {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" style="background: transparent;">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Automatiza<span class="highlight">Ferrol</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="casos-exito.html">Casos de Éxito</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <a href="contacto.html" class="btn btn-primary nav-cta">Solicitar Demo</a>
+            <button class="mobile-menu-btn" aria-label="Menú"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg-effects">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="grid-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                Especialistas en automatización para comercios locales
+            </div>
+            <h1>Automatizamos tu negocio<br><span class="gradient-text">para que dediques tiempo a lo que importa</span>
+            </h1>
+            <p class="hero-subtitle">Transformamos la gestión de pequeños comercios en Ferrol con automatizaciones
+                inteligentes. Menos tareas repetitivas, menos errores, más tiempo para tus clientes.</p>
+            <div class="hero-cta">
+                <a href="contacto.html" class="btn btn-primary btn-lg">
+                    <span>Solicitar Demo Gratuita</span>
+                    <span>→</span>
+                </a>
+                <a href="servicios.html" class="btn btn-secondary btn-lg">Ver Soluciones</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">15h</span>
+                    <span class="stat-label">Ahorro semanal</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">-80%</span>
+                    <span class="stat-label">Menos errores</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Funcionamiento</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quick Solutions -->
+    <section>
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Soluciones</span>
+                <h2>Automatizaciones más demandadas</h2>
+                <p>Soluciones probadas que ya funcionan en comercios de Ferrol</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+                <a href="servicios.html#facturacion" class="card" style="text-decoration: none;">
+                    <div class="card-icon">🧾</div>
+                    <h3>Facturación Automática</h3>
+                    <p>Genera y envía facturas automáticamente desde tus ventas. Sin errores, sin esfuerzo.</p>
+                </a>
+                <a href="servicios.html#citas" class="card" style="text-decoration: none;">
+                    <div class="card-icon">📅</div>
+                    <h3>Gestión de Citas</h3>
+                    <p>Reservas online 24/7 con recordatorios automáticos. Reduce no-shows un 50%.</p>
+                </a>
+                <a href="servicios.html#inventario" class="card" style="text-decoration: none;">
+                    <div class="card-icon">📦</div>
+                    <h3>Control de Inventario</h3>
+                    <p>Stock en tiempo real con alertas de reposición. Nunca más "se me acabó".</p>
+                </a>
+                <a href="servicios.html#informes" class="card" style="text-decoration: none;">
+                    <div class="card-icon">📊</div>
+                    <h3>Informes Automáticos</h3>
+                    <p>Dashboard en vivo y reportes semanales en tu email. Decisiones basadas en datos.</p>
+                </a>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="servicios.html" class="btn btn-outline">Ver todos los servicios →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Testimonials -->
+    <section style="background: var(--bg-card);">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Casos de éxito</span>
+                <h2>Lo que dicen nuestros clientes</h2>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <div class="card">
+                    <div style="color: var(--warning); margin-bottom: 0.5rem;">★★★★★</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">"Los no-shows bajaron a la mitad.
+                        Ahora los clientes reservan solos y reciben recordatorios automáticos."</p>
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div
+                            style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">
+                            MR</div>
+                        <div>
+                            <strong style="font-size: 0.875rem;">María Rodríguez</strong>
+                            <span style="display: block; font-size: 0.75rem; color: var(--text-muted);">Peluquería
+                                Estilos María</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div style="color: var(--warning); margin-bottom: 0.5rem;">★★★★★</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">"Ya no pierdo ventas por falta de
+                        stock. El sistema me avisa cuando hay que reponer."</p>
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div
+                            style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">
+                            CL</div>
+                        <div>
+                            <strong style="font-size: 0.875rem;">Carlos López</strong>
+                            <span style="display: block; font-size: 0.75rem; color: var(--text-muted);">Calzados
+                                López</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div style="color: var(--warning); margin-bottom: 0.5rem;">★★★★★</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">"Las facturas se generan solas. Antes
+                        me llevaba toda la tarde del viernes, ahora es automático."</p>
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <div
+                            style="width: 40px; height: 40px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.875rem;">
+                            LG</div>
+                        <div>
+                            <strong style="font-size: 0.875rem;">Laura García</strong>
+                            <span style="display: block; font-size: 0.75rem; color: var(--text-muted);">Cafetería El
+                                Puerto</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="casos-exito.html" class="btn btn-outline">Ver más casos de éxito →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section>
+        <div class="container">
+            <div class="cta-banner">
+                <h3>¿Listo para automatizar tu negocio?</h3>
+                <p>Solicita una demo gratuita de 30 minutos. Te mostramos cómo podemos ayudarte sin compromiso.</p>
+                <a href="contacto.html" class="btn btn-primary btn-lg">Solicitar Demo Gratuita →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">Automatiza<span class="highlight">Ferrol</span></span>
+                    </a>
+                    <p>Automatizaciones empresariales para pequeños comercios en Ferrol y comarca.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="servicios.html#facturacion">Facturación automática</a></li>
+                        <li><a href="servicios.html#citas">Gestión de citas</a></li>
+                        <li><a href="servicios.html#inventario">Control de inventario</a></li>
+                        <li><a href="servicios.html#informes">Informes automáticos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="casos-exito.html">Casos de éxito</a></li>
+                        <li><a href="precios.html">Precios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📍 Ferrol, A Coruña, Galicia</li>
+                        <li>📧 <a href="mailto:hola@Eixo Atl�ntico.es">hola@Eixo Atl�ntico.es</a></li>
+                        <li>📞 <a href="tel:+34600000000">+34 600 000 000</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eixo Atl�ntico. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Aviso legal</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

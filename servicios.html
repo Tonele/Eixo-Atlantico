@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Eixo Atl�ntico - Servicios de automatización empresarial para pequeños comercios en Ferrol. Facturación, inventario, citas y más.">
+    <title>Servicios | Eixo Atl�ntico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Automatiza<span class="highlight">Ferrol</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html" class="active">Servicios</a></li>
+                <li><a href="casos-exito.html">Casos de Éxito</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <a href="contacto.html" class="btn btn-primary nav-cta">Solicitar Demo</a>
+            <button class="mobile-menu-btn" aria-label="Menú">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Inicio</a>
+                <span>/</span>
+                <span>Servicios</span>
+            </div>
+            <h1>Nuestros Servicios</h1>
+            <p>Automatizaciones diseñadas específicamente para pequeños comercios. Soluciones que se adaptan a tu
+                negocio, no al revés.</p>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Service 1: Facturación -->
+                <div class="service-card featured" id="facturacion">
+                    <div class="service-header">
+                        <div class="service-icon">🧾</div>
+                        <div class="service-title">
+                            <h3>Facturación Automática Inteligente</h3>
+                            <span class="price">Desde 79€/mes</span>
+                        </div>
+                    </div>
+                    <p class="service-description">Sistema completo de facturación automática que genera, envía y
+                        almacena facturas sin intervención manual. Integrado con tu sistema de ventas actual.</p>
+                    <div class="service-problem">
+                        <strong>❌ El problema</strong>
+                        <p>Horas perdidas creando facturas manualmente, copiando datos de un sitio a otro, errores de
+                            cálculo, olvidos de facturar a clientes, y problemas con Hacienda por facturas incorrectas.
+                        </p>
+                    </div>
+                    <div class="service-solution">
+                        <strong>✓ Nuestra solución</strong>
+                        <p>Cada venta genera automáticamente una factura con todos los datos correctos. Se envía por
+                            email al cliente y se guarda clasificada para contabilidad. Cumplimiento fiscal garantizado.
+                        </p>
+                    </div>
+                    <ul class="service-benefits">
+                        <li>Generación automática desde ventas/pedidos</li>
+                        <li>Envío automático por email al cliente</li>
+                        <li>Numeración correlativa automática</li>
+                        <li>Exportación para gestoría/contabilidad</li>
+                        <li>Cumplimiento con normativa fiscal española</li>
+                        <li>Recordatorios de facturas impagadas</li>
+                    </ul>
+                    <div class="service-meta">
+                        <span>⏱️ Implementación: 3-5 días</span>
+                        <span>📊 ROI: 5h/semana ahorradas</span>
+                    </div>
+                </div>
+
+                <!-- Service 2: Gestión de Citas -->
+                <div class="service-card" id="citas">
+                    <div class="service-header">
+                        <div class="service-icon">📅</div>
+                        <div class="service-title">
+                            <h3>Gestión de Citas y Reservas</h3>
+                            <span class="price">Desde 59€/mes</span>
+                        </div>
+                    </div>
+                    <p class="service-description">Sistema de reservas online 24/7 con recordatorios automáticos por SMS
+                        y WhatsApp. Tus clientes reservan solos, tú te olvidas de gestionar la agenda.</p>
+                    <div class="service-problem">
+                        <strong>❌ El problema</strong>
+                        <p>Interrupciones constantes para atender llamadas de citas, clientes que no aparecen
+                            (no-shows), agenda en papel o WhatsApp imposible de gestionar, dobles reservas accidentales.
+                        </p>
+                    </div>
+                    <div class="service-solution">
+                        <strong>✓ Nuestra solución</strong>
+                        <p>Página de reservas online disponible 24/7. El cliente elige día, hora y servicio. Recibe
+                            confirmación inmediata y recordatorios automáticos 24h y 1h antes de la cita.</p>
+                    </div>
+                    <ul class="service-benefits">
+                        <li>Reservas online 24/7 desde móvil o web</li>
+                        <li>Recordatorios automáticos SMS/WhatsApp</li>
+                        <li>Sincronización con Google Calendar</li>
+                        <li>Gestión de cancelaciones y reprogramaciones</li>
+                        <li>Reducción de no-shows hasta un 50%</li>
+                        <li>Historial de citas por cliente</li>
+                    </ul>
+                    <div class="service-meta">
+                        <span>⏱️ Implementación: 3-5 días</span>
+                        <span>📊 ROI: -50% cancelaciones</span>
+                    </div>
+                </div>
+
+                <!-- Service 3: Control de Inventario -->
+                <div class="service-card" id="inventario">
+                    <div class="service-header">
+                        <div class="service-icon">📦</div>
+                        <div class="service-title">
+                            <h3>Control de Inventario en Tiempo Real</h3>
+                            <span class="price">Desde 99€/mes</span>
+                        </div>
+                    </div>
+                    <p class="service-description">Sincronización automática de tu stock con alertas inteligentes. Nunca
+                        más te quedas sin producto ni acumulas sobrestock.</p>
+                    <div class="service-problem">
+                        <strong>❌ El problema</strong>
+                        <p>Stock desactualizado en Excel o papel, te enteras de que falta producto cuando el cliente lo
+                            pide, sobrestock de productos que no se venden, pedidos a proveedores olvidados o tardíos.
+                        </p>
+                    </div>
+                    <div class="service-solution">
+                        <strong>✓ Nuestra solución</strong>
+                        <p>Sistema de inventario en tiempo real. Cada venta resta automáticamente del stock. Alertas
+                            cuando un producto baja del mínimo. Opción de pedido automático a proveedores.</p>
+                    </div>
+                    <ul class="service-benefits">
+                        <li>Stock actualizado en tiempo real</li>
+                        <li>Alertas de reposición automáticas</li>
+                        <li>Pedidos automáticos a proveedores</li>
+                        <li>Informes de rotación de productos</li>
+                        <li>Control de productos estrella y problemáticos</li>
+                        <li>Inventario multicañal (tienda + web)</li>
+                    </ul>
+                    <div class="service-meta">
+                        <span>⏱️ Implementación: 5-7 días</span>
+                        <span>📊 ROI: -30% roturas de stock</span>
+                    </div>
+                </div>
+
+                <!-- Service 4: Marketing Automation -->
+                <div class="service-card" id="marketing">
+                    <div class="service-header">
+                        <div class="service-icon">📧</div>
+                        <div class="service-title">
+                            <h3>Marketing Automation Básico</h3>
+                            <span class="price">Desde 89€/mes</span>
+                        </div>
+                    </div>
+                    <p class="service-description">Campañas automáticas de email y SMS segmentadas por tipo de cliente.
+                        Fideliza sin esfuerzo y recupera clientes inactivos.</p>
+                    <div class="service-problem">
+                        <strong>❌ El problema</strong>
+                        <p>No tienes tiempo para enviar newsletters, los clientes se olvidan de ti, no sabes cómo
+                            fidelizar, vas perdiendo clientes poco a poco sin darte cuenta.</p>
+                    </div>
+                    <div class="service-solution">
+                        <strong>✓ Nuestra solución</strong>
+                        <p>Secuencias automáticas de email/SMS: bienvenida a nuevos clientes, felicitación de
+                            cumpleaños, recordatorio a clientes inactivos, ofertas personalizadas según historial de
+                            compra.</p>
+                    </div>
+                    <ul class="service-benefits">
+                        <li>Email de bienvenida automático</li>
+                        <li>Felicitaciones de cumpleaños con descuento</li>
+                        <li>Recuperación de clientes inactivos</li>
+                        <li>Ofertas segmentadas por comportamiento</li>
+                        <li>Newsletters automáticas mensuales</li>
+                        <li>Métricas de apertura y conversión</li>
+                    </ul>
+                    <div class="service-meta">
+                        <span>⏱️ Implementación: 5-7 días</span>
+                        <span>📊 ROI: +25% retención clientes</span>
+                    </div>
+                </div>
+
+                <!-- Service 5: CRM -->
+                <div class="service-card" id="crm">
+                    <div class="service-header">
+                        <div class="service-icon">👥</div>
+                        <div class="service-title">
+                            <h3>CRM para Pequeños Comercios</h3>
+                            <span class="price">Desde 99€/mes</span>
+                        </div>
+                    </div>
+                    <p class="service-description">Sistema de gestión de clientes adaptado a comercios locales. Conoce a
+                        tus clientes, recuerda sus preferencias y ofrece un servicio personalizado.</p>
+                    <div class="service-problem">
+                        <strong>❌ El problema</strong>
+                        <p>Datos de clientes dispersos (papeles, móvil, cabeza), no recuerdas qué compró cada cliente,
+                            no sabes quiénes son tus mejores clientes, pierdes oportunidades de venta cruzada.</p>
+                    </div>
+                    <div class="service-solution">
+                        <strong>✓ Nuestra solución</strong>
+                        <p>Ficha de cliente centralizada con historial completo: compras, preferencias, notas,
+                            cumpleaños. Alertas de seguimiento. Segmentación automática por valor de cliente.</p>
+                    </div>
+                    <ul class="service-benefits">
+                        <li>Ficha completa de cada cliente</li>
+                        <li>Historial de compras y preferencias</li>
+                        <li>Recordatorios de seguimiento</li>
+                        <li>Segmentación automática (VIP, regulares, inactivos)</li>
+                        <li>Notas y comentarios por cliente</li>
+                        <li>Integración con facturación y marketing</li>
+                    </ul>
+                    <div class="service-meta">
+                        <span>⏱️ Implementación: 5-7 días</span>
+                        <span>📊 ROI: +15% ticket medio</span>
+                    </div>
+                </div>
+
+                <!-- Service 6: Informes Automáticos -->
+                <div class="service-card" id="informes">
+                    <div class="service-header">
+                        <div class="service-icon">📊</div>
+                        <div class="service-title">
+                            <h3>Informes y Dashboards Automáticos</h3>
+                            <span class="price">Desde 69€/mes</span>
+                        </div>
+                    </div>
+                    <p class="service-description">Dashboards en tiempo real y reportes automáticos semanales. Toma
+                        decisiones basadas en datos, no en intuición.</p>
+                    <div class="service-problem">
+                        <strong>❌ El problema</strong>
+                        <p>No sabes cuánto vendes realmente, qué productos son rentables, cuáles son tus horas punta.
+                            Pasas horas creando informes en Excel que nadie mira.</p>
+                    </div>
+                    <div class="service-solution">
+                        <strong>✓ Nuestra solución</strong>
+                        <p>Dashboard visual con métricas clave de tu negocio en tiempo real. Cada lunes te llega un
+                            email con resumen de la semana: ventas, productos top, comparativa con semana anterior.</p>
+                    </div>
+                    <ul class="service-benefits">
+                        <li>Dashboard en tiempo real</li>
+                        <li>Informe semanal automático por email</li>
+                        <li>Comparativas mes/año anterior</li>
+                        <li>Productos más y menos vendidos</li>
+                        <li>Análisis de horas punta</li>
+                        <li>Predicciones de demanda</li>
+                    </ul>
+                    <div class="service-meta">
+                        <span>⏱️ Implementación: 3-5 días</span>
+                        <span>📊 ROI: Decisiones +30% mejores</span>
+                    </div>
+                </div>
+
+                <!-- Service 7: Chatbot -->
+                <div class="service-card" id="chatbot">
+                    <div class="service-header">
+                        <div class="service-icon">🤖</div>
+                        <div class="service-title">
+                            <h3>Atención al Cliente con Chatbot</h3>
+                            <span class="price">Desde 129€/mes</span>
+                        </div>
+                    </div>
+                    <p class="service-description">Chatbot para WhatsApp y web que responde preguntas frecuentes,
+                        horarios, disponibilidad y deriva al humano cuando es necesario.</p>
+                    <div class="service-problem">
+                        <strong>❌ El problema</strong>
+                        <p>Mensajes de WhatsApp a todas horas preguntando lo mismo (horarios, precios, disponibilidad),
+                            interrupciones constantes, clientes que no pueden contactarte fuera de horario.</p>
+                    </div>
+                    <div class="service-solution">
+                        <strong>✓ Nuestra solución</strong>
+                        <p>Bot inteligente que responde 24/7 las preguntas más frecuentes. Sabe cuándo derivar a una
+                            persona. Puede tomar pedidos simples o generar citas automáticamente.</p>
+                    </div>
+                    <ul class="service-benefits">
+                        <li>Atención 24/7 automatizada</li>
+                        <li>Respuestas a FAQs (horarios, precios, ubicación)</li>
+                        <li>Derivación inteligente a humano</li>
+                        <li>Integración WhatsApp Business</li>
+                        <li>Widget para tu web</li>
+                        <li>Estadísticas de consultas</li>
+                    </ul>
+                    <div class="service-meta">
+                        <span>⏱️ Implementación: 5-7 días</span>
+                        <span>📊 ROI: -60% interrupciones</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section>
+        <div class="container">
+            <div class="cta-banner">
+                <h3>¿No encuentras lo que buscas?</h3>
+                <p>Creamos automatizaciones a medida para tu negocio. Cuéntanos tu problema y te proponemos una
+                    solución.</p>
+                <a href="contacto.html" class="btn btn-primary btn-lg">Hablar con un experto →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">Automatiza<span class="highlight">Ferrol</span></span>
+                    </a>
+                    <p>Automatizaciones empresariales para pequeños comercios en Ferrol y comarca.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#facturacion">Facturación automática</a></li>
+                        <li><a href="#citas">Gestión de citas</a></li>
+                        <li><a href="#inventario">Control de inventario</a></li>
+                        <li><a href="#informes">Informes automáticos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="casos-exito.html">Casos de éxito</a></li>
+                        <li><a href="precios.html">Precios</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="nosotros.html">Sobre nosotros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📍 Ferrol, A Coruña, Galicia</li>
+                        <li>📧 <a href="mailto:hola@Eixo Atl�ntico.es">hola@Eixo Atl�ntico.es</a></li>
+                        <li>📞 <a href="tel:+34600000000">+34 600 000 000</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Eixo Atl�ntico. Todos los derechos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de privacidad</a>
+                    <a href="#">Aviso legal</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
